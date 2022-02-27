@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Soirée : Connecting Everyone</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Pacifico&family=Playfair+Display+SC:ital@0;1&family=Poppins:wght@300&family=Shizuru&display=swap" rel="stylesheet">
+       
+    </head>
+    <body>
+        <section class="showcase">
+            <header>
+                <h2 class="logo">Soirée</h2>
+                <div class="toggle"></div>
+            </header>
+            <video src="explore.mp4" muted loop autoplay></video>
+          
+            <div class="text">
+                <h2>Find your Tribe</h2><br><br>
+                <h3>Soirée : Connecting Everyone</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos autem in vel cumque praesentium debitis, vitae quibusdam ullam, magnam minima aut saepe recusandae ipsa pariatur sequi sunt iusto, rerum exercitationem.</p>
+            </div>
+        </section>
+        <div class="menu">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">NEWS</a></li>
+                <li><a href="#">JOIN US</a></li>
+                <li><a href="#">LOG IN</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </div>
+
+        <script>
+            const menuToggle = document.querySelector('.toggle')
+            const showcase = document.querySelector('.showcase')
+
+            menuToggle.addEventListener('click',() => {
+                menuToggle.classList.toggle('active')
+                showcase.classList.toggle('active')
+            })
+        </script>
+    </body>
+</html>
